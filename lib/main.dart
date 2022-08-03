@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
-void main(){
-   runApp(MyApp());
+void main() {
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,14 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("hello"),
-            
-          ),
-        ),
-      ),
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
